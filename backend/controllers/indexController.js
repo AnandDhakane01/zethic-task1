@@ -1,13 +1,4 @@
 const indexController = (req, res) => {
-  console.log();
-  console.log();
-  console.log();
-  console.log();
-  console.log(req.body);
-  console.log();
-  console.log();
-  console.log();
-  console.log();
 
   const { roomSize, insects } = req.body;
   if (!roomSize || !insects) {
