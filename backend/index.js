@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import indexController from "./controllers/indexController.js";
 
-const port = 3000;
+const port = 5000;
 const app = express();
 
 // Middlewares
@@ -16,5 +16,5 @@ app.use(express.urlencoded({ extended: true }));
 app.post("/", indexController);
 
 app.listen(port, () => {
-  console.log("Server listening on port 3000");
+  console.log(`Server listening on port ${port}`);
 });

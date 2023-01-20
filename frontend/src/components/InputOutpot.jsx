@@ -8,7 +8,7 @@ const InputOutput = () => {
     const req_data = parseInput();
 
     try {
-      let res = await fetch(`http://localhost:3000/`, {
+      let res = await fetch(`http://localhost:5000/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(req_data),
